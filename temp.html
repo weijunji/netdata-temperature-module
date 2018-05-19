@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Your dashboard</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <script>var netdataTheme = 'slate';</script>
+        <!-- here we will add dashboard.js -->
+        <script type="text/javascript" src="/dashboard.js"></script>
+</head>
+<body>
+
+<!-- here we will add charts -->
+<div class="container">
+<div class="row">
+    <div data-netdata="Environment.Temperature" data-chart-library="gauge" data-gauge-min-value="-20" data-gauge-max-value="40" data-units="℃" data-title="Temperature" data-gauge-start-color="#2775b6" data-gauge-stop-color="#de2a18"></div>
+    <div data-netdata="Environment.Temperature" data-dygraph-valuerange="[-20,40]" data-height="240"></div>
+</div>
+</div>
+</body>
+</html>
